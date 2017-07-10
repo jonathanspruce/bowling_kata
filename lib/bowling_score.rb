@@ -18,8 +18,6 @@ class BowlingScore
       t_score += convert_throw(b_throw)
 
       # check if the final frame of the game (there are special rules)
-      # require 'pry'
-      # binding.pry
       end_frame = full_game && i >= (all_throws.length - 3)
 
       # add any special scores if spare or strike
