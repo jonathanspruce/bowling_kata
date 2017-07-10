@@ -3,3 +3,4 @@ gem 'rubocop-custom-cops'
 source "https://rubygems.org"
 
 gem "rspec"
+gem 'pry-byebug'

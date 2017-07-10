@@ -3,7 +3,7 @@
 # BowlingScore used to take a single string showing the score of each throw of
 # the game as input and calculate the total score
 class BowlingScore
-  attr_accessor :all_throws
+  attr_accessor :all_throws, :full_game
 
   def initialize(all_throws, full_game = false)
     @all_throws = all_throws.split('')
@@ -13,12 +13,14 @@ class BowlingScore
   def total_score
     t_score = 0
 
-    @all_throws.each_with_index do |b_throw, i|
+    all_throws.each_with_index do |b_throw, i|
       # add score from this throw
       t_score += convert_throw(b_throw)
 
-      # check if the final frame of the game (there are special rules
-      end_frame = @full_game && i >= (all_throws.length - 3)
+      # check if the final frame of the game (there are special rules)
+      # require 'pry'
+      # binding.pry
+      end_frame = full_game && i >= (all_throws.length - 3)
 
       # add any special scores if spare or strike
       next unless ['X', '/'].include? b_throw

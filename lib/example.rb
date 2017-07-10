@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # An example file to demonstrate how to use the BowlingScore class
 
 require_relative 'bowling_score'

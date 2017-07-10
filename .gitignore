@@ -11,6 +11,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/bin/
 
 # Used by dotenv library to load environment variables.
 # .env
@@ -47,3 +48,6 @@ build-iPhoneSimulator/
 # Gemfile.lock
 # .ruby-version
 # .ruby-gemset
+
+# testing/debugging
+.byebug_history
